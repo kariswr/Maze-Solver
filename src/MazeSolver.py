@@ -76,7 +76,7 @@ def printMaze(F):
 #----------------------------------------------------------------------
 #fungsi untuk menhitung jarak dari suatu titik ke goal, untuk fungsi heuristik A*
 def countDistance(inp,out):
-	return math.sqrt(pow(out[0], inp[0]) + pow(out[1], inp[1]))
+	return math.sqrt(pow(out[0]-inp[0],2) + pow(out[1]-inp[1],2))
 #----------------------------------------------------------------------
 #fungsi untuk mencari nilai x pada way, dan akan menghapus nilai x pada way 
 #jika pop bernilai True
